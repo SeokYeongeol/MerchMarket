@@ -38,6 +38,7 @@ public class SecurityConfig {
                 .rememberMe(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/auth/**").permitAll()
+                        .requestMatchers("/api/v1/admin/auth/**").permitAll()
                         .requestMatchers("/api/v1/admin/**").hasAuthority(MemberRole.Authority.ADMIN)
                         .anyRequest().authenticated()
                 );
