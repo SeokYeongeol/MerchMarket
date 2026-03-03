@@ -39,4 +39,7 @@ public class Member extends TimeStamped {
         this.name = name;
         this.role = role;
     }
+
+    public void changePassword(String password) { this.password = password; }
+    public void deleteMember() { this.deletedAt = LocalDateTime.now(); }
 }

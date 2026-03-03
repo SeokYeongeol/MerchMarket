@@ -19,6 +19,7 @@ public enum ErrorCode {
     EXPIRED_JWT("만료된 JWT 토큰입니다.", UNAUTHORIZED),
     UNSUPPORTED_JWT("지원되지 않는 JWT 토큰입니다.", BAD_REQUEST),
     INVALID_USER_ROLE("유효하지 않는 역할입니다.", BAD_REQUEST),
+    PASSWORD_SAME_AS_OLD("이전 패스워드와 동일할 수 없습니다.", BAD_REQUEST),
     INVALID_PASSWORD("비밀번호가 일치하지 않습니다.", BAD_REQUEST);
 
 
