@@ -34,7 +34,7 @@ public class MemberService {
     @Transactional
     public void deleteMember(Auth auth, DeleteMemberRequest request) {
         Member findMember = getMember(auth.getId());
-        matchPassword(findMember.getPassword(), request.getPassword());
+        matchPassword(request.getPassword(), findMember.getPassword());
 
         findMember.deleteMember();
     }
