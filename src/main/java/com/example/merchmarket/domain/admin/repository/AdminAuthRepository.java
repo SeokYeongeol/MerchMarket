@@ -1,6 +1,6 @@
-package com.example.merchmarket.domain.admin.auth.repository;
+package com.example.merchmarket.domain.admin.repository;
 
-import com.example.merchmarket.domain.admin.auth.entity.Admin;
+import com.example.merchmarket.domain.admin.entity.Admin;
 import io.lettuce.core.dynamic.annotation.Param;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

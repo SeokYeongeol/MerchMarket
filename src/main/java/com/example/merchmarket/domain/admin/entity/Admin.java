@@ -1,4 +1,4 @@
-package com.example.merchmarket.domain.admin.auth.entity;
+package com.example.merchmarket.domain.admin.entity;
 
 import com.example.merchmarket.domain.member.role.MemberRole;
 import com.example.merchmarket.global.entity.TimeStamped;
@@ -34,4 +34,7 @@ public class Admin extends TimeStamped {
         this.name = name;
         this.role = role;
     }
+
+    private Admin(Long id) { this.id = id; }
+    public static Admin fromAuth(Long authId) { return new Admin(authId); }
 }

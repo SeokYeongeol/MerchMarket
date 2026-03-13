@@ -1,7 +1,7 @@
-package com.example.merchmarket.domain.admin.auth.controller;
+package com.example.merchmarket.domain.admin.controller;
 
-import com.example.merchmarket.domain.admin.auth.dto.request.AdminSignUpRequest;
-import com.example.merchmarket.domain.admin.auth.service.AdminAuthService;
+import com.example.merchmarket.domain.admin.dto.request.AdminSignUpRequest;
+import com.example.merchmarket.domain.admin.service.AdminAuthService;
 import com.example.merchmarket.domain.auth.dto.request.LoginRequest;
 import com.example.merchmarket.domain.auth.dto.response.AuthResponse;
 import jakarta.validation.Valid;

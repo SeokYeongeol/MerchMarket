@@ -1,8 +1,8 @@
-package com.example.merchmarket.domain.admin.auth.service;
+package com.example.merchmarket.domain.admin.service;
 
-import com.example.merchmarket.domain.admin.auth.dto.request.AdminSignUpRequest;
-import com.example.merchmarket.domain.admin.auth.entity.Admin;
-import com.example.merchmarket.domain.admin.auth.repository.AdminAuthRepository;
+import com.example.merchmarket.domain.admin.dto.request.AdminSignUpRequest;
+import com.example.merchmarket.domain.admin.entity.Admin;
+import com.example.merchmarket.domain.admin.repository.AdminAuthRepository;
 import com.example.merchmarket.domain.auth.dto.request.LoginRequest;
 import com.example.merchmarket.domain.auth.dto.response.AuthResponse;
 import com.example.merchmarket.domain.member.role.MemberRole;
